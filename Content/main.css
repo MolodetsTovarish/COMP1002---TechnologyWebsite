@@ -1,0 +1,35 @@
+body {
+    background-color: bisque;
+    background-image: url(Assets/Images/carwheel.jpg);
+}
+
+h1 {
+    font-family: serif;
+}
+
+
+header{
+    position:relative;
+    margin: 0 auto 0 auto;
+    font-family: sans-serif;
+    border: solid;
+    border-width: 1;
+    
+}
+
+aside{
+    align-content: center;
+    position: relative;
+        left:35%;
+}
+
+ul#menu li {
+        
+        display:inline;
+        font-size: 18pt;  
+
+}
+
+div#productimages{
+        display:inline;
+}

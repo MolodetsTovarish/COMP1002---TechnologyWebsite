@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Wheel - Products</title>
+        <link rel="stylesheet" href="Content/main.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+            <header>
+                <nav class="primary_nav" role="navigation">
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a> | </li>
+                        <li><a href="products.html">Products</a> | </li>
+                        <li><a href="history.html">History</a> | </li>
+                        <li><a href="about.html">How It Works</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <!-- Product Display Section -->
+            <section>
+                <h1>Our Products</h1>
+                <!-- Displays images of products -->
+                <div id="productimages">
+                    <img src="Assets/Images/woodwheel.jpg" alt="Wooden Wheel" width="375" height="300">
+                    <img src="Assets/Images/potters-wheel.jpg" alt="Potter's Wheel" width="375" height="300">
+                    <img src="Assets/Images/carwheel.jpg" alt="Car Wheel" width="375" height="300">
+                </div>
+            
+                <p>Our current selection of wheels includes:
+                   <ul>
+                        <li><strong>The Wooden Wheel</strong>: A classic beginner model</li>
+                        <li><strong>The Potter's Wheel</strong>: For all your ceramic and clay-related needs</li>
+                        <li><strong>The Car Wheel</strong>: Compatible with most modern cars as a replacement wheel</li>
+                   </ul>
+               </p>
+            </section>
+            
+            
+            <!-- Form Section -->
+                <section class="formSection">
+                    <form action="processForm.php" method="post" id="purchaseForm" class="forms">
+                       <fieldset class="purchase">
+                       <legend>Purchase Form</legend>
+                       
+                       <!-- Radio Buttons -->
+                       <fieldset class="productselect">
+                           <legend>Select a Product</legend>
+                           <input type="radio" id="woodwheel" name="woodwheel" value="Wooden Wheel">
+                           <label for="woodwheel">Wooden Wheel</label>
+                           
+                           <input type="radio" id="potterwheel" name="potterwheel" value="Potter's Wheel">
+                           <label for="woodwheel">Potter's Wheel</label>
+                           
+                           <input type="radio" id="carwheel" name="carwheel" value="Car Wheel">
+                           <label for="woodwheel">Car Wheel</label>
+                       </fieldset>
+                       
+                       <div class= "row formGroup">
+                       <label for="firstName">First Name:</label>
+                       <input type="text" id="firstName" name = "firstName" class = "formControl" placeholder="Enter Your First Name" required>
+                        </div>
+                        
+                        <div class= "row formGroup">
+                       <label for="lastName">Last Name:</label>
+                       <input type="text" id="lastName" name = "lastName" class = "formControl" placeholder="Enter Your Last Name" required>
+                        </div>
+                        
+                       <div class= "row formGroup">
+                       <label for="email">Email:</label>
+                       <input type="text" id="email" name = "email" class = "formControl" placeholder="Enter Your Email" required>
+                       </div>
+                       
+                       <div class= "row formGroup">
+                       <label for="phone">Phone:</label>
+                       <input type="textarea" id="phone" name = "phone" class = "formControl" placeholder="(XXX) XXX-XXXX" required>
+                       </div>
+                       
+                       <div class= "row formGroup">
+                       <label for="Address">Address:</label>
+                       <input type="textarea" id="address" name = "address" class = "formControl" placeholder="Enter Your Address" required>
+                       </div>
+                       
+                       <div class= "row formGroup">
+                       <label for="postalcode">Postal Code:</label>
+                       <input type="textarea" id="postalcode" name = "postalcode" class = "formControl" placeholder="XXX XXX" required>
+                       </div>
+                       
+                       </fieldset>
+                       
+                       <!-- Submit Button -->
+                       <input type="submit" value="Order Item" class = "btn">
+                       
+                    </form>
+                </section>
+            
+            
+            <!--Footer Section -->
+            <footer role="contentinfo">
+                &copy; Copyright Wheel Corp. 2015. All rights reserved.
+            </footer>
+            
+    </body>
+    
+</html>
